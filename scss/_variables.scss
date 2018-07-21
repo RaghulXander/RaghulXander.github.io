@@ -1,0 +1,75 @@
+/*font Variables*/
+$ral: 'Poppins', serif;
+$yell: 'Courgette', cursive;
+$bree: 'Bree Serif', serif;
+
+/*Color Variables*/
+
+$baseColor: #fec608;
+$dip: #222222;  
+$pfont: #333333;
+$gray: #666666;
+
+
+
+// Mixins
+@mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+.col-md-offset-right-1 {
+    margin-right: 8.33333333%;
+}
+// Font family link
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Raleway:100,200,300,400,500,600,700,800,900|Courgette');
+
+//@font-face {
+//    font-family: "ralH";
+//    src: url(../fonts/theme-font/Raleway-Heavy.woff);
+//}
+//@font-face {
+//    font-family: "monR";
+//    src: url(../fonts/theme-font/Montserrat-Regular.woff);
+//}
+//@font-face {
+//    font-family: "monB";
+//    src: url(../fonts/theme-font/Montserrat-Bold.woff);
+//}
+
+
+/* ---- reset ---- */ 
+body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
+canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ 
+#footer-particles-js,#particles-js{ position:absolute; width: 100%; height: 100%;     right: 0%;} /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; }
+
+.footer_area,
+.service_area {
+    position: relative;
+}
+
+.footer_area {
+    margin-top: 60px;
+}
+.footer_inner {
+    background: rgb(0, 0, 0) !important;
+}
+
+.content_inner_bg {
+    background: #77e0ff6b !important;
+}
+
+.footer-content {
+    text-align: center;
+    display: inline-block;
+    float: none;
+}
