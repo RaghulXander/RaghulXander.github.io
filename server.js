@@ -5,8 +5,8 @@ var path = require('path');
 app.use(express.static(__dirname))
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
-    console.log("Server started in 8080")
+    console.log("Server started in PORT | 8080")
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.listen(8080);
+app.listen( process.env.PORT ||8080);

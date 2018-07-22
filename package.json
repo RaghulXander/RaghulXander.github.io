@@ -20,6 +20,9 @@
     "raghul",
     "xander"
   ],
+  "engines": {
+    "node": "8.11.3"
+  },
   "author": "raghulXander",
   "license": "ISC",
   "bugs": {
