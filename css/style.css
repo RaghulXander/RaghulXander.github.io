@@ -122,6 +122,12 @@ body,
   float: none;
 }
 
+@media screen and (max-width: 767px) {
+  #footer-particles-js, #particles-js, #body-particles-js {
+    display: none;
+  }
+}
+
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 ul {
@@ -311,7 +317,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /* Header Menu Area css
 ============================================================================================ */
 .header_area {
-  background: #fec608;
+  background: #b7e7f2;
 }
 
 .header_area .navbar.navbar-default {
@@ -409,7 +415,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .about_person_area .person_details h3 span {
-  color: #fec608;
+  color: #ef5e36;
 }
 
 .about_person_area .person_details h4 {
@@ -563,7 +569,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 ============================================================================================ */
 .download_btn {
   display: block;
-  background: #fec608;
+  background: #b7e7f2;
   text-align: center;
   line-height: 40px;
   border-radius: 20px;
@@ -623,7 +629,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   outline: none !important;
   border: none;
   border-radius: 0px;
-  background: #fec608;
+  background: #b7e7f2;
   width: 100%;
   padding: 0px;
   position: relative;
@@ -659,11 +665,11 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .contact_btn:focus {
-  background: #fec608;
+  background: #b7e7f2;
 }
 
 .contact_btn:hover {
-  background: #fec608;
+  background: #b7e7f2;
 }
 
 .contact_btn:hover span {
@@ -723,7 +729,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .myskill_area .skill_item_inner .single_skill .progress .progress-bar {
-  background: #fec608;
+  background: #ef5e36;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -762,7 +768,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   left: 50%;
   width: 5px;
   margin-left: -2.5px;
-  background: rgba(254, 198, 8, 0.5);
+  background: #ff6124;
 }
 
 .education_area .education_inner_area .education_item {
@@ -783,7 +789,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  border: 4px solid #f7da7b;
+  border: 4px solid #ff6124;
   text-align: center;
   color: #fff;
   line-height: 43px;
@@ -791,12 +797,12 @@ body, p, h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  background: #fec608;
+  background: #3898d5;
 }
 
 .education_area .education_inner_area .education_item:after {
   content: "";
-  background: #f7da7b;
+  background: #ff6124;
   height: 4px;
   position: absolute;
   right: -78px;
@@ -831,7 +837,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .education_area .education_inner_area .education_item h6 {
   font-size: 14px;
-  color: #fec608;
+  color: #ef5e36;
   font-family: "Poppins", serif;
   font-weight: bold;
 }
@@ -863,7 +869,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /* Service Area css
 ============================================================================================ */
 .service_area {
-  background: #fec608;
+  background: #b7e7f2;
   padding: 0px 50px 60px 50px;
 }
 
@@ -943,7 +949,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 .portfolio_area .porfolio_menu .causes_filter li a:before {
   content: "";
   height: 5px;
-  background: #fec608;
+  background: #b7e7f2;
   width: 100%;
   position: absolute;
   left: 0px;
@@ -1048,7 +1054,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio_area .portfolio_list_inner .portfolio_item:hover .portfolio_title {
-  background: #fec608;
+  background: #b7e7f2;
 }
 
 .portfolio_area .portfolio_list_inner .portfolio_item:hover .portfolio_title h4 {
@@ -1085,7 +1091,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .twitter_area ul li a {
-  color: #fec608;
+  color: #b7e7f2;
   font-size: 14px;
   line-height: 24px;
   font-family: "Poppins", serif;
@@ -1195,7 +1201,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .blog_slider_area .blog_slider_inner .item h5 a {
-  color: #fec608;
+  color: #b7e7f2;
 }
 
 .blog_slider_area .owl-prev {
@@ -1212,7 +1218,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .blog_slider_area .owl-prev:hover {
-  color: #fec608;
+  color: #b7e7f2;
 }
 
 .blog_slider_area .owl-next {
@@ -1229,7 +1235,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .blog_slider_area .owl-next:hover {
-  color: #fec608;
+  color: #b7e7f2;
 }
 
 .contact_title h3 {
@@ -1262,13 +1268,13 @@ body, p, h1, h2, h3, h4, h5, h6 {
 .left_contact_details .media .media-left i {
   height: 60px;
   width: 60px;
-  background: #fec608;
+  background: #b7e7f2;
   color: #fff;
   font-size: 30px;
   text-align: center;
   line-height: 60px;
   border-radius: 50%;
-  border: 1px solid #fec608;
+  border: 1px solid #b7e7f2;
   -webkit-transition: all 400ms linear 0s;
   -o-transition: all 400ms linear 0s;
   transition: all 400ms linear 0s;
@@ -1292,7 +1298,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .left_contact_details .media:hover .media-left i {
   background: transparent;
-  color: #fec608;
+  color: #b7e7f2;
 }
 
 .contact_from_area .form-group {
@@ -1339,7 +1345,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .contact_from_area .form-group input:focus {
-  border-color: #fec608;
+  border-color: #b7e7f2;
 }
 
 .contact_from_area .form-group textarea {
@@ -1383,7 +1389,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .contact_from_area .form-group textarea:focus {
-  border-color: #fec608;
+  border-color: #b7e7f2;
 }
 
 .contact_from_area .form-group:last-child {
@@ -1432,7 +1438,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   display: block;
   margin-right: 5px;
   margin-bottom: 5px;
-  background: #fec608;
+  background: #b7e7f2;
 }
 
 .envalab-style-switch .switched-options .styles li:nth-child(2) a {
@@ -1565,7 +1571,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 .footer_copyright .pull-left h5 a {
   font-weight: bold;
-  color: #fec608;
+  color: #b7e7f2;
 }
 
 .footer_copyright .pull-right .navbar-nav li {
@@ -1590,7 +1596,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .footer_copyright .pull-right .navbar-nav li:hover a, .footer_copyright .pull-right .navbar-nav li.active a {
-  color: #fec608;
+  color: #b7e7f2;
 }
 
 /* End Footer area css
