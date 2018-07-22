@@ -98,13 +98,13 @@
     .navbar-toggle {
         margin-top: 23px;
         margin-bottom: 23px;
-        border: 1px solid #333333 !important;
+        border: 1px solid #fff !important;
     }
     .navbar-toggle:hover {
-        background: transparent !important;
+        background: #fff !important;
     }
     .navbar-toggle span{
-        background: #333333 !important;
+        background: #3798dc !important;
     }
     .header_area .navbar.navbar-default .navbar-header .navbar-brand {
         line-height: 78px;
