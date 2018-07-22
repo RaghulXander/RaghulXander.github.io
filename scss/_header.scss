@@ -1,7 +1,7 @@
 /* Header Menu Area css
 ============================================================================================ */
 .header_area{
-    background: $baseColor;
+    background: #000000;
     .navbar.navbar-default{
         border: none;
         border-radius: 0px;
@@ -29,13 +29,13 @@
                         font-family: $ral;
                         text-transform: uppercase;
                         font-weight: bold;
-                        color: $dip;
+                        color: #fff;
                         display: inline-block;
                         @include transition;
                     }
                     &:hover, &.active{
                         a{
-                            color: #fff;
+                            color: #3798dc;
                         }
                     }
                     &:last-child{

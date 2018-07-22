@@ -2,7 +2,7 @@
 $ral: 'Poppins', serif;
 $yell: 'Courgette', cursive;
 $bree: 'Bree Serif', serif;
-
+$lato: 'Merienda', sans-serif;
 /*Color Variables*/
 
 $baseColor: #b7e7f2;
@@ -31,8 +31,9 @@ $gray: #666666;
     margin-right: 8.33333333%;
 }
 // Font family link
+@import url('https://fonts.googleapis.com/css?family=Merienda:700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Raleway:100,200,300,400,500,600,700,800,900|Courgette');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Courgette');
 
 //@font-face {
 //    font-family: "ralH";
@@ -66,6 +67,18 @@ body,
 .footer_area,
 .service_area {
     position: relative;
+}
+
+.lato-text {
+    font-family: $lato;
+    color: #fff;
+    vertical-align: sub;
+    display: inline-block;
+    font-size: 19px;
+
+    &:hover {
+        color: #3798dc;
+    }
 }
 
 .footer_area {

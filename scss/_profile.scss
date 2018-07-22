@@ -19,12 +19,13 @@
         h3{
             font-size: 36px;
             color: $pfont;
-            text-transform: uppercase;
-            font-family: $ral;
+            text-transform: capitalize;
+            font-family: $lato;
             font-weight: bold;
             padding-bottom: 10px;
             span{
                 color: $progressColor;
+                font-family: $lato;
             }
         }
         h4{
