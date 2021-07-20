@@ -110,14 +110,14 @@
                         <div class="col-md-5">
                             <div class="person_img">
                                 <img draggable="false" src="img/member/member-2.jpg" alt="">
-                                <a class="download_btn" target="_blank" href="https://drive.google.com/open?id=1qhjRc7m2Syoe2FSpBWoKXniJZuy8k-Nm"><span>Download Resume</span></a>
+                                <a class="download_btn" target="_blank" href="https://drive.google.com/drive/folders/18l9ZxwSD1GX33a-tm04NBgI445J5K488?usp=sharing, https://drive.google.com/file/d/1y7L-xbbWdrsIBm40_Bx8L3uh-uU0Bihh/view?usp=sharing"><span>Download Resume</span></a>
                             </div>
                         </div>
                         <div class="col-md-7">
                             <div class="row person_details">
                                 <h3>Hi I'm <span>Raghul Ranganathan J</span></h3>
                                 <h4>Web and UI Developer</h4>
-                                <p>I'm 23 years old. I love to be developer so as to build new things by starting from a blank whiteboard or at early stage prototype and transforming it into something that more value for people. Professionally I've done this as a part of team and personally I have done this to gain experience and improve coding standards.</p>
+                                <p>I'm <span id="desc-age"></span> years old. I love to be developer so as to build new things by starting from a blank whiteboard or at early stage prototype and transforming it into something that more value for people. Professionally I've done this as a part of team and personally I have done this to gain experience and improve coding standards.</p>
                                 <div class="person_information">
                                     <ul>
                                         <li><a href="#">Age</a></li>
@@ -128,9 +128,9 @@
                                         <li><a href="#">Email</a></li>
                                     </ul>
                                     <ul>
-                                        <li><a href="#">24</a></li>
-                                        <li><a href="#">2 years (27 months)</a></li>
-                                        <li><a href="#">Dharmapuri</a></li>
+                                        <li><a id="age" href="#">-</a></li>
+                                        <li><a id="exp" href="#">-</a></li>
+                                        <li><a href="#">Dharmapuri, Tamil Nadu, India</a></li>
                                         <li><a href="#">+91 7639822188</a></li>
                                         <li><a href="#">raghuldpi95@hotmail.com</a></li>
                                         <li><a href="#">raghuldpi95@gmail.com</a></li>
@@ -172,8 +172,8 @@
                                 <div class="single_skill">
                                     <h4>Angular JS</h4>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress_parcent"><span class="counter">70</span>%</div>
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress_parcent"><span class="counter">50</span>%</div>
                                         </div>
                                     </div>
                                 </div>
@@ -204,32 +204,32 @@
                                 <div class="single_skill">
                                     <h4>Node JS</h4>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress_parcent"><span class="counter">80</span>%</div>
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress_parcent"><span class="counter">50</span>%</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="single_skill">
                                     <h4>Express Framework</h4>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress_parcent"><span class="counter">70</span>%</div>
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress_parcent"><span class="counter">40</span>%</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="single_skill">
                                     <h4>PostgreSQL</h4>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress_parcent"><span class="counter">75</span>%</div>
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress_parcent"><span class="counter">65</span>%</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="single_skill">
                                     <h4>MongoDB</h4>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress_parcent"><span class="counter">75</span>%</div>
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress_parcent"><span class="counter">25</span>%</div>
                                         </div>
                                     </div>
                                 </div>
@@ -447,5 +447,19 @@
         <!-- <script src="js/contact.js"></script> -->
         
         <script src="js/theme.js"></script>
+        <script>
+            function getAge() {
+                const age = new Date().getFullYear() - 1995
+                document.getElementById('age').innerHTML = `${age} years`
+                document.getElementById('desc-age').innerHTML = `${age}`
+            }
+            function getExperience() {
+                const years =  new Date().getFullYear() - new Date("04/14/2017").getFullYear()
+                const exp = ((years * 12) - 4) + new Date().getMonth()
+                document.getElementById('exp').innerHTML = `${parseInt(exp/12)} (${exp}) months`
+            }
+            getAge()
+            getExperience()
+        </script>
     </body>
 </html>
